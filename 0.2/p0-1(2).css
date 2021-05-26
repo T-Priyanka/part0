@@ -1,0 +1,14 @@
+body {
+  background-image: url("p0-2.jpg");
+}
+h1 {
+  border: 2px solid black;
+  margin: auto;  
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+}
+p{
+  font-family: "Lucida Console", "Courier New", monospace;
+  letter-spacing: 3px;
+}

@@ -1,0 +1,9 @@
+body {
+  background-image: url("p0-2.jpg");
+}
+h1 {
+  border: 2px solid black;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+}
