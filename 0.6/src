@@ -1,16 +1,16 @@
-browser->server: HTTP GET 
-browser->server: HTTP GET 
-browser->server: HTTP GET 
-server-->browser: main.js
+client->browser: click on the save button
 
 note over browser:
-browser starts executing js-code
-that requests JSON data from server 
+browser starts executing callback
+code for submit button
+which updates page tree adding note
+and then post change to server 
 end note
 
-browser->server: HTTP GET 
+browser->browser: redrawNotes()
+browser->browser: sendToServer(note)
 
 
-note over browser:
-browser executes the event handler
-end note
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: [{"message":"note created"}]
+
